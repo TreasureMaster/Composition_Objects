@@ -1,0 +1,12 @@
+{
+  "name": "izruska/composition",
+  "description": "Testing Composition Objects",
+  "autoload": {
+    "psr-4": {
+      "Element\\": "Element",
+      "Mark\\": "Mark",
+      "MainObject\\": "MainObject",
+      "Dimension\\": "Dimension"
+    }
+  }
+}
