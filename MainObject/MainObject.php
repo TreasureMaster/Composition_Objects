@@ -18,7 +18,7 @@
       $this->elements[$elem->getName()] = $elem;
     }
 
-    public function getNames()
+    public function getObjects()
     {
       foreach ($this->elements as $key => $value) {
         echo "<h4>Элемент $key</h4>";
@@ -29,7 +29,7 @@
     public function getDimensions()
     {
       foreach ($this->elements as $key => $value) {
-        echo "Размер $key: {$value->getDimension()}<br>";
+        echo "Размер $key: {$value->getDimension()} и полное имя: {$value->getFullElementName()}<br>";
       }
     }
   }

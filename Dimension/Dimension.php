@@ -29,5 +29,11 @@
     {
       return $this->base_value / 1000;
     }
+
+    // получение размера для вставки в имя объекта
+    public function getBaseForName()
+    {
+      return $this->base_value;
+    }
   }
 ?>

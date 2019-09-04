@@ -18,5 +18,10 @@
     {
       return $this->length->getMeter() * $this->width->getMeter();
     }
+    // получаем полное имя
+    public function getFullElementName()
+    {
+      return $this->getSHortElementName() . '_' . $this->length->getBaseForName() . 'x' . $this->width->getBaseForName();
+    }
   }
 ?>

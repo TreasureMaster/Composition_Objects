@@ -11,7 +11,7 @@
                                         new Dimension\Dimension (array('value'=>200, 'measure'=>'cm'))
                                       ));
 
-  $main->getNames();
+  $main->getObjects();
 
   // echo '<h4>Основной объект</h4>';
   // var_dump($main);

@@ -17,5 +17,11 @@
     {
       return $this->name;
     }
+
+    // получаем короткое имя
+    public function getShortElementName()
+    {
+      return strtolower((new \ReflectionClass($this))->getShortName());
+    }
   }
 ?>
