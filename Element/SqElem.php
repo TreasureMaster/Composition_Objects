@@ -6,7 +6,7 @@
     protected $length;
     protected $width;
 
-    public function __construct($name, $l, $w)
+    public function __construct($name, \Dimension\Dimension $l, \Dimension\Dimension $w)
     {
       parent::__construct($name);
       $this->length = $l;

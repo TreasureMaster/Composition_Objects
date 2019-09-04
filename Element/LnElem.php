@@ -5,7 +5,7 @@
   {
     protected $length;
 
-    public function __construct($name, $l)
+    public function __construct($name, \Dimension\Dimension $l)
     {
       parent::__construct($name);
       $this->length = $l;
