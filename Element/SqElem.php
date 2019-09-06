@@ -16,12 +16,12 @@
     // тест получения площади объекта square
     public function getDimension()
     {
-      return $this->length->getMeter() * $this->width->getMeter();
+      return $this->length->conversionFromBase('m') * $this->width->conversionFromBase('m');
     }
     // получаем полное имя
     public function getFullElementName()
     {
-      return $this->getSHortElementName() . '_' . $this->length->getBaseForName() . 'x' . $this->width->getBaseForName();
+      return $this->getSHortElementName() . '_' . $this->length->conversionFromBase('mm') . 'x' . $this->width->conversionFromBase('mm');
     }
   }
 ?>

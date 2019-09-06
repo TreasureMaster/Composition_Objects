@@ -13,13 +13,13 @@
 
     public function getDimension()
     {
-      return $this->length->getMeter();
+      return $this->length->conversionFromBase('m');
     }
 
     // получаем полное имя
     public function getFullElementName()
     {
-      return $this->getSHortElementName() . '_' . $this->length->getBaseForName();
+      return $this->getSHortElementName() . '_' . $this->length->conversionFromBase('mm');
     }
   }
 ?>
